@@ -1,0 +1,116 @@
+.navbar {
+  background-color: white;
+  padding: 1rem;
+}
+.navbar .nav-link {
+  color: rgb(24, 23, 23);
+}
+.navbar .nav-link:hover {
+  color: #cc8b00;
+}
+
+.usps-section {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.usps-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.usps-section .table {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.usps-section .table th {
+  background-color: #343a40;
+  color: #fff;
+  font-weight: 500;
+  padding: 1rem;
+}
+.usps-section .table td {
+  padding: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.usps-section .table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+  .usps-section {
+    padding: 1rem;
+  }
+  .usps-section h2 {
+    font-size: 2rem;
+  }
+  .usps-section .table td {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}
+.vision-mission-section {
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the entire section */
+  /* Mission section specific styles */
+  /* Enhance the vision section with a subtle shadow */
+  /* Enhance the mission section with a slight border */
+  /* Responsive Design */
+}
+.vision-mission-section .vision, .vision-mission-section .mission {
+  padding: 1.5rem; /* Inner padding for each section */
+  border-radius: 8px; /* Rounded corners for inner sections */
+  margin-bottom: 1rem; /* Space between sections */
+  position: relative; /* Needed for pseudo-elements */
+  /* Add a pseudo-element for a border effect */
+}
+.vision-mission-section .vision h2, .vision-mission-section .mission h2 {
+  font-size: 2rem; /* Heading size */
+  margin-bottom: 1rem; /* Space below the heading */
+  position: relative;
+  z-index: 1; /* Ensure the heading is above the pseudo-element */
+}
+.vision-mission-section .vision p, .vision-mission-section .vision li, .vision-mission-section .mission p, .vision-mission-section .mission li {
+  font-size: 1.2rem; /* Text size */
+  line-height: 1.6; /* Line height for readability */
+  color: #555; /* Gray text color */
+}
+.vision-mission-section .vision::before, .vision-mission-section .mission::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px; /* Width of the left border effect */
+  height: 100%;
+  background-color: #00796b; /* Darker blue for Vision */
+  border-radius: 8px 0 0 8px; /* Rounded corners on the left */
+  z-index: 0; /* Position behind the text */
+}
+.vision-mission-section .mission::before {
+  background-color: #e65100; /* Darker orange for Mission */
+}
+.vision-mission-section .vision {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+.vision-mission-section .mission {
+  border: 1px solid #e65100; /* Solid border for Mission */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+@media (max-width: 768px) {
+  .vision-mission-section .vision, .vision-mission-section .mission {
+    text-align: center; /* Center text on smaller screens */
+  }
+  .vision-mission-section h2 {
+    font-size: 1.5rem; /* Smaller heading size */
+  }
+  .vision-mission-section p, .vision-mission-section li {
+    font-size: 1rem; /* Smaller text size */
+  }
+}
